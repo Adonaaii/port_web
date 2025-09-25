@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>My Homepage</title>
+        <title>Samuel - Computer Science Student</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -9,16 +11,68 @@
                 <a href="home.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="projects.html">Projects</a> 
+                <a href="contact.html" class="highlight">Contact</a>
             </nav>
         </header>
+        
         <main>
-            <section>
-                <h1>I am Samuel</h1>
-                <p>I'm a penultimate-year Computer Science student at the University of Surrey, crafting software solutions and building towards a career in tech.<br> Here you'll find a collection of my personal projects and learning milestones.
-                </p>
-                <a href="projects.html">View Projects</a>
+            <section class="hero">
+                <!-- Animated background element -->
+                <div class="hero-bg"></div>
+                
+                <div class="hero-content">
+                    <!-- Profile Photo -->
+                    <img src="assets/images/photo.jpg" alt="Samuel - Computer Science Student" class="profile-photo">
+                    
+                    <!-- Main Heading -->
+                    <h1>I am Samuel</h1>
+                    
+                    <!-- Enhanced Introduction -->
+                    <div class="container">
+                        <p class="intro-text">I'm a penultimate-year Computer Science student at the University of Surrey, crafting innovative software solutions and building towards a career in tech. Here you'll find a collection of my personal projects and learning milestones.</p>
+                    </div>
+                    
+                    <!-- Tech Stack Preview -->
+                    <div class="skills-preview">
+                        <h3>Technologies I Work With:</h3>
+                        <div class="tech-tags">
+                            <span>JavaScript</span>
+                            <span>Python</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>HTML/CSS</span>
+                            <span>Git</span>
+                            <span>Java</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Featured Project Spotlight -->
+                    <div class="featured-project">
+                        <h3>Featured Project</h3>
+                        <div class="project-card">
+                            <h4>Portfolio Website</h4>
+                            <p>A responsive, modern portfolio built with pure HTML/CSS showcasing my frontend development skills.</p>
+                            <a href="projects.html#portfolio-project" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Call-to-Action Buttons -->
+                    <div class="cta-buttons">
+                        <a href="projects.html" class="btn primary">View All Projects</a>
+                        <a href="contact.html" class="btn secondary">Get In Touch</a>
+                        <a href="assets/documents/resume.pdf" class="btn outline" download>Download Resume</a>
+                    </div>
+                </div>
+                
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <span>Scroll to explore</span>
+                    <div class="arrow"></div>
+                </div>
             </section>
         </main>
+        
+        <script src="scripts/animations.js"></script>
     </body>
-
 </html>
